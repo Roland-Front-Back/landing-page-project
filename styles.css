@@ -209,10 +209,6 @@ h4 {
   font-size: 30px;
 }
 
-span {
-  color: green;
-}
-
 .bottom-text {
   margin-top: 250px;
   color: var(--hero-main-text-color);
@@ -224,6 +220,57 @@ span {
   background-image: url(/img/bg.jpg);
   background-repeat: no-repeat;
   background-position: 35% 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.review-heading {
+  font-size: 30px;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.review-contents {
+  width: 700px;
+  height: 500px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.review-contents::-webkit-scrollbar {
+  width: 5px;
+}
+
+.review-contents::-webkit-scrollbar-track {
+  background: rgba(247, 242, 242, 0.925);
+  border-radius: 4px;
+}
+
+.review-contents::-webkit-scrollbar-thumb {
+  background: var(--button-color);
+  border-radius: 4px;
+}
+
+.review-contents p {
+  font-style: italic;
+}
+
+strong {
+  color: var(--button-color);
+}
+
+h5 {
+  color: #ffffff;
+  font-size: 20px;
 }
 
 #guide {
